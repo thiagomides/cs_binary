@@ -25,73 +25,54 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
 
 ## Usage
 
-There are two ways to use this script:
+There are three ways to use this script:
 
 1. Drag your `.*` file(s) onto `client.py`.
-2. Using the command line which also offers more advanced options.
+2. Drag your directory onto `client.py`.
+3. Using the command line which also offers more advanced options.
 
 
 ### Command Line Help
 
-    usage: client.py [-h] [--directory DIR] [--port PORT] [--command COMM]
-                  [--file filename]
+    usage: client.py [-h] [--port PORT] [--command "STR"] [--directory DIR]
+                  [--file filename] 
     
 
-    Split m4b audio book by chapters.
+    Split client binary book by chapters.
 
     positional arguments:
       filename              .* file(s) to be played
 
     optional arguments:
-      -h, --help            show this help message and exit
-      -d DIR, --directory DIR
-                            directory to store encoded files
-      --custom-name "STR"   customize chapter filenames (see README)
-      --ffmpeg BIN          path to ffmpeg binary
-      --encoder BIN         path to encoder binary (default: ffmpeg)
-      --encode-opts "STR"   custom encoding string (see README)
-      --ext EXT             extension of encoded files
-      --pipe-wav            pipe wav to encoder
-      --skip-encoding       do not encode audio (keep as .mp4)
-      --no-mp4v2            use ffmpeg to retrieve chapters (not recommended)
-      --debug               output debug messages and save to log file
+      -h, --help            show this help message and exit.
+      -p PORT, --port PORT  port number to listen up
+      --directory BIN       path to binary file(s)
+      --command   STR       customize chapter command (see README)
+  
 
-#### Chapter filenames
+#### Chapter command
 
-You can customize the chapter filenames with `--custom-name "STR"` where `STR` is a valid python [format string](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
+You can customize the chapter command with `--command STR` where `STR` is a valid python [format string](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
 
-Default ("My Title.mp3"):
+    command arguments:
+      list                return playlist now
+      next                begin a new sound playback
+      play                begin sound playback
+      stop                temporarily stop playback of all sound channels
+      noow                return the music name
+      rewind              restart music
 
-    --custom-name "%(title)s"
-
-Chapter number ("3 - My Title.mp3"):
-
-    --custom-name "%(num)d - %(title)s"
-
-Chapter number with leading zero ("03 - My Title.mp3"):
-
-    --custom-name "%(num)02d - %(title)s"
-
-#### Encoding
-
-By default the audio will be encoded with the lame mp3 codec using [ffmpeg](http://www.ffmpeg.org/ffmpeg-doc.html). The bit rate and sampling freq will be the same as the source file.
-If you wish to use other settings you can specify your own encoding options with `--encode-opts "STR"`. `STR` will be passed to the encoder (`--encoder` or skip to use ffmpeg). Variables available:
-
-    %(outfile)s - output filename (required)
-    %(infile)s - .m4b file
-    %(bit_rate)d - bit rate of .m4b file
-    %(sample_rate)d - sampling rate of .m4b file
-
+  
 
 ### Examples
 
-Convert multiple audio books (you can also drag multiple m4b files onto `m4b.py`):
+Play file (you can also drag one .* files onto `client.py`):
 
-    python m4b.py myfile.m4b otherfile.m4b
+    python client.py -f  Led_Zeppelin-Stairway_To_Heaven.mp3
 
 Include chapter number in the generated filenames: (example: "Chapter 10 - Some Title.mp3")
 
-    python m4b.py --custom-name "Chapter %(num)d - %(title)s" myfile.m4b
+    python client.py -d ~/Musicas/Beatles/The_White_Album/
 
 If you rather want .mp4 files you can skip encoding to speed up the conversion process:
 
