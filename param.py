@@ -12,7 +12,6 @@ except ImportError:
 global TCP_IP
 global BUFFER_SIZE
 global SOCKET
-global FIRST
 global FREQ
 global BITSIZE
 global CHANNELS
@@ -21,9 +20,8 @@ global FRAMERATE
 
 
 
-FIRST = True
 TCP_IP = "127.0.0.1"
-SOCKET = 3094
+SOCKET = 3030
 BUFFER_SIZE = 4096
 
 # global constants

@@ -14,10 +14,13 @@ def path_leaf(path):
     head, tail = ntpath.split(path)
     return tail or ntpath.basename(head)
 
+def check_file_exists(directory):
+	path = directory
+	return os.path.isfile(path)
+
 def parseArg():
 	parser = OptionParser()
 
-	parser.add_option("-p", "--port", dest="port", help="Port Number to Listen Up", metavar="PORT_NUM",type="int")
 	parser.add_option("-f", "--file", dest="file", help="File to share");
 	parser.add_option("-d", "--directory", dest="dir", help="Directory to share")
 	parser.add_option("-c", "--command", dest="command", help="Command")
@@ -25,6 +28,8 @@ def parseArg():
 	(options, args) = parser.parse_args()
 
 	if options.file != None or options.dir != None:
+	#	if check_file_exists(options.dir):
+	#		exit("Directory "+ options.dir +" doenst exist")	
 		pass
 		#if not(exists(options.file)):
 		#	raise RuntimeError("File doenst exist")	
@@ -63,13 +68,12 @@ def remote_control(command):
 
 def file_transfer(files):
 
-	file_extension = ".mp3"
-	for music in files:
+	for binary in files:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.connect((TCP_IP, SOCKET))
 		
 		s.send("001")
-		filename_complete, file_extension = os.path.splitext(music)
+		filename_complete, file_extension = os.path.splitext(binary)
 		filename = path_leaf(filename_complete)+file_extension
 		
 		size = len(filename)
@@ -86,7 +90,7 @@ def file_transfer(files):
 			filesize = bin(filesize)[2:].zfill(32) 
 			s.send(filesize)
 
-			f = open(music,"r")
+			f = open(binary,"r")
 			l = f.read(BUFFER_SIZE)
 	        
 			while l:
@@ -98,7 +102,7 @@ def file_transfer(files):
 def main():
 	files = []
 	if options.dir != None:
-		for filename in glob.glob(options.dir+"/*.mp3"):
+		for filename in glob.glob(options.dir+"/*"):
 			files.append(filename)		
 		file_transfer(files)
 	elif options.file != None:  
