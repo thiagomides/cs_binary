@@ -6,7 +6,7 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
 ## Requirements
 
 * [Python](http://www.python.org/download/) (tested with v2.7)
-* Tkinter (tested with 8.6)
+* [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)
 * [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)
 
 
@@ -34,7 +34,7 @@ There are three ways to use this script:
 
 ### Command Line Help
 
-    usage: client.py [-h] [--port PORT] [--command "STR"] [--directory DIR]
+    usage: client.py [-h] [--port PORT] [--command CMD] [--directory DIR]
                   [--file filename] 
     
 
@@ -52,7 +52,7 @@ There are three ways to use this script:
 
 #### Chapter command
 
-You can customize the chapter command with `--command STR` where `STR` is a valid python [format string](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
+You can customize the chapter command with `--command CMD` where `CMD` is a valid python [format string](http://docs.python.org/library/stdtypes.html#string-formatting-operations).
 
     command arguments:
       list                return playlist now
@@ -70,18 +70,41 @@ Play file (you can also drag one .* files onto `client.py`):
 
     python client.py -f  Led_Zeppelin-Stairway_To_Heaven.mp3
 
-Include chapter number in the generated filenames: (example: "Chapter 10 - Some Title.mp3")
+Play folder file(s):
 
     python client.py -d ~/Music/Beatles/The_White_Album/
 
-If you rather want .mp4 files you can skip encoding to speed up the conversion process:
+Get attually server playlist:
 
-    python m4b.py --skip-encoding myfile.m4b
+    python client.py -c list
 
-Force sampling freq to 22050 Hz and bit rate to 128 kbit/s:
+Force server port and submit multiple file(s):
 
-    python m4b.py --encode-opts "-y -i %(infile)s -acodec libmp3lame -ar 22050 -ab 128k %(outfile)s" myfile.m4b
+    python client.py -d ~/Music/Beatles/The_White_Album/ -p 3030
 
-Encode with lame.exe:
 
-    python m4b.py --encoder lame.exe --pipe-wav --encode-opts "-V 3 -h - %(outfile)s" myfile.m4b
+## Server usage
+
+There is a way to use this script:
+
+1. Using the command line which also offers a port options.
+
+### Command Line Help
+
+    usage: server.py [-h] [--port PORT] 
+    
+    optional arguments:
+      -h, --help            show this help message and exit.
+      -p PORT, --port PORT  port number to listen up
+
+### Examples
+
+DEFAULT:
+
+    python server.py
+
+Server change socket:
+
+    python server -p 3030
+
+
