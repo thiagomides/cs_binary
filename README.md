@@ -47,7 +47,7 @@ There are three ways to use this script:
       -h, --help            show this help message and exit.
       -p PORT, --port PORT  port number to listen up
       -a IP, --address 		address number to listen up
-      --no-keep-alive       connections are  considered persistent unless a --no-keep-alive header is included
+      --no-keep-alive       connections are considered persistent unless a --no-keep-alive is included
       --directory BIN       path to binary file(s)
       --command   STR       customize chapter command (see README)
   
