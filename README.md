@@ -34,7 +34,7 @@ There are three ways to use this script:
 
 ### Command Line Help
 
-    usage: client.py [-h] [--port PORT] [--command CMD] [--directory DIR]
+    usage: client.py [-h] [--port PORT] [--address IP] [--command CMD] [--directory DIR]
                   [--file filename] 
     
 
@@ -46,6 +46,8 @@ There are three ways to use this script:
     optional arguments:
       -h, --help            show this help message and exit.
       -p PORT, --port PORT  port number to listen up
+      -a IP, --address 		address number to listen up
+      --no-keep-alive       connections are  considered persistent unless a --no-keep-alive header is included
       --directory BIN       path to binary file(s)
       --command   STR       customize chapter command (see README)
   
@@ -91,15 +93,17 @@ There is a way to use this script:
 
 ### Command Line Help
 
-    usage: server.py [-h] [--port PORT] 
+    usage: server.py [-h] [--port PORT] [--address IP] 
     
     optional arguments:
       -h, --help            show this help message and exit.
       -p PORT, --port PORT  port number to listen up
+      -a IP, --address 		address number to Listen Up
+
 
 ### Examples
 
-DEFAULT:
+Default:
 
     python server.py
 
