@@ -35,21 +35,21 @@ There are three ways to use this script:
 ### Command Line Help
 
     usage: client.py [-h] [--port PORT] [--address IP] [--command CMD] [--directory DIR]
-                  [--file filename] 
+                  [--file DOF] 
     
 
     Split client binary book by chapters.
 
     positional arguments:
-      filename              .* file(s) to be played
+    	(filename or directory)               .* file(s) to be played
 
     optional arguments:
-      -h, --help            show this help message and exit.
-      -p PORT, --port PORT  port number to listen up
-      -a IP, --address 		address number to listen up
-      --no-keep-alive       connections are considered persistent unless a --no-keep-alive is included
-      --directory BIN       path to binary file(s)
-      --command   STR       customize chapter command (see README)
+      -h, --help            	show this help message and exit.
+      -p PORT, --port     PORT  port number to listen up (default: 3030)
+      -a IP, --address    IP	address number to listen up (default: 127.0.0.1)
+      --no-keep-alive        	connections are considered persistent unless a --no-keep-alive is included
+      -f DOF,  --file     DOF   path to binary file(s) or binary file
+      -c STR,  --command  CMD   customize chapter command (see README)
   
 
 #### Chapter command
@@ -72,9 +72,9 @@ Play file (you can also drag one .* files onto `client.py`):
 
     python client.py -f  Led_Zeppelin-Stairway_To_Heaven.mp3
 
-Play folder file(s):
+Play folder file(s) no persistent connections:
 
-    python client.py -d ~/Music/Beatles/The_White_Album/
+    python client.py -f ~/Music/Beatles/The_White_Album/ --no-keep-alive
 
 Get attually server playlist:
 
@@ -82,7 +82,7 @@ Get attually server playlist:
 
 Force server port and submit multiple file(s):
 
-    python client.py -d ~/Music/Beatles/The_White_Album/ -p 3030
+    python client.py -d ~/Music/Beatles/The_White_Album/ -p 3035
 
 
 ## Server usage
@@ -93,12 +93,11 @@ There is a way to use this script:
 
 ### Command Line Help
 
-    usage: server.py [-h] [--port PORT] [--address IP] 
+    usage: server.py [-h] [--port PORT] 
     
     optional arguments:
       -h, --help            show this help message and exit.
       -p PORT, --port PORT  port number to listen up
-      -a IP, --address 		address number to Listen Up
 
 
 ### Examples

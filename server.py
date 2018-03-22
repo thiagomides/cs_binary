@@ -23,25 +23,27 @@ def clear_repository():
         os.remove("arquivos/"+file)
 
     ini = time.time()
-    date_time = time.asctime( time.localtime(time.time()) )
-    logging.debug("[S] Repository clean "+ str(date_time) )
+    logging.debug("[S] Repository clean "+ str(time.asctime( time.localtime(time.time()) )) )
     c = ["beep-01a.mp3"]
     played = []
+    played.append(0)
 
 def music_play(x):
-    global c
+    global c, noow
+    noow = c[x]
     pygame.mixer.music.load(c[x])
     pygame.mixer.music.play(0)
     logging.info("[M] "+str(x)+ " played "+ str(c[x]))
+    played.append(x)
+    print(x, c[x])
+
 
 
 def music():
-    global c
     pygame.init()
-    
     try:
-        pygame.mixer.pre_init(48000, -16, 2)
-        pygame.mixer.init(48000, -16, 1, 4096)
+        pygame.mixer.pre_init(44100, -16, 2)
+        pygame.mixer.init(44100, -16, 1, 4096)
     
     except pygame.error, exc:
      
@@ -49,8 +51,6 @@ def music():
         exit()
 
     music_play(0)
-
-    
     queu()
 
 def queu():
@@ -60,23 +60,15 @@ def queu():
     try:
       if int(pos) == -1:
         j = 0
-        while True:
-
+        x = random.randint(1,len(c))
+        while x in played:
             if j == len(c):
                 played = []
-
-            x = random.randint(0,len(c))
-            
-            if (x not in played or x != 0):
-                played.append(x)
-                break
-            
+                j = 0
             j += 1
-
-        if x != 0:
-            print(x, c[x])
-            noow = c[x]
-            music_play(x)
+            x = random.randint(1,len(c))            
+        
+        music_play(x)
 
     except:
       pass
@@ -101,14 +93,14 @@ def music_transfer(client_socket,addr):
     while True:
 
         type = client_socket.recv(3)
-        if type == "111":
+        if type == ETF:
             break
 
 
         size = client_socket.recv(16)
         name = client_socket.recv(int(size))
         
-        client_socket.send("101")
+        client_socket.send(RTM)
         
         filesize = client_socket.recv(32)
         filesize = int(filesize, 2)
@@ -130,14 +122,14 @@ def music_transfer(client_socket,addr):
         logging.debug("[M] "+name+ " Send to "+ str(addr))
 
         
-        client_socket.send("200")
+        client_socket.send(FTF)
 
     client_socket.close()
 
 def remote_control(client_socket):
     global c,x
     type = client_socket.recv(4)
-    print type
+    
     if type == "list":
         response(client_socket,get_playlist())
 
@@ -154,8 +146,11 @@ def remote_control(client_socket):
     
     else:
         if (type == "next"):
-            music_play(random.randint(1,len(c)))
-            response(client_socket,"Next Music")
+            msg = "No Music List"
+            if len(c) > 1:
+                music_play(random.randint(1,len(c)))
+                msg = "Next Music"    
+            response(client_socket,msg)
            
         elif (type == "rewi"):
             
@@ -165,9 +160,9 @@ def remote_control(client_socket):
 
 def control(client_socket,addr):
     type = client_socket.recv(3)
-    if type == "001":
+    if type == MTF:
         music_transfer(client_socket,addr)
-    elif type == "002":
+    elif type == RCC:
         remote_control(client_socket)
         
     

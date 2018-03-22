@@ -9,25 +9,22 @@ import os,socket,ntpath,glob
 def parseArg():
 	parser = OptionParser()
 
-	parser.add_option("-p", "--port", dest="port", help="port number to listen up", metavar="PORT",type="int");
-	parser.add_option("-a", "--address", dest="addr", help="address number to listen up",metavar="IP");
+	parser.add_option("-p", "--port", dest="port", help="port number to listen up (default: 3030)", metavar="PORT",type="int");
+	parser.add_option("-a", "--address", dest="addr", help="address number to listen up (default: 127.0.0.1)",metavar="IP");
 	parser.add_option('--no-keep-alive',dest="no_keep_alive", action='store_true',help='connections are  considered persistent unless a --no-keep-alive header is included')
-	parser.add_option("-f", "--file", dest="file", help="binary file",metavar="BIN");
-	parser.add_option("-d", "--directory", dest="dir", help="path to binary file(s)", metavar="DIR")
+	parser.add_option("-f", "--file", dest="file", help="path to binary file(s) or binary file",metavar="DOF");
 	parser.add_option("-c", "--command", dest="command", help="customize chapter command (see README)",metavar="CMD")
-
-	 
 
 	(options, args) = parser.parse_args()
 
 	if options.port == None:
 		options.port = 3030
-	if options.dir == None and options.file == None and options.command == None: 
-		raise RuntimeError("Parameter -d or -f or -c problem")
+	if options.file == None and options.command == None: 
+		raise RuntimeError("Parameter -f or -c problem")
 	if options.addr == None: 
 		options.addr = "127.0.0.1"
-	if options.dir != None and not(exists(options.dir)):
-		raise RuntimeError("Directory doenst exist")
+	if options.file != None and not(exists(options.file)):
+		exit("Directory or File doenst exist")
 	
 	return (options, args)
 
@@ -36,8 +33,6 @@ def path_leaf(path):
 	head, tail = ntpath.split(path)
 	return tail or ntpath.basename(head)
 
-def check_file_exists(directory):
-	return os.path.isfile(directory)
 
 def response(s,resp):
 	s.send(resp)
@@ -76,7 +71,7 @@ def file_transfer(files,options):
 
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((options.addr, int(options.port)))
-	response(s,"001")
+	response(s,MTF)
 	i = 0
 	for binary in files:
 
@@ -84,10 +79,10 @@ def file_transfer(files,options):
 			s.close()
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((options.addr, int(options.port)))
-			response(s,"001")
+			response(s,MTF)
 
 
-		response(s,"001")
+		response(s,MTF)
 
 		filename_complete, file_extension = os.path.splitext(binary)
 		filename = path_leaf(filename_complete)+file_extension
@@ -95,7 +90,7 @@ def file_transfer(files,options):
 		s.send(binary_encode(filename,16))
 		s.send(filename)
 
-		if (s.recv(3) == "101"):
+		if (s.recv(3) == RTM):
 
 			filesize = os.path.getsize(os.path.join(filename_complete+file_extension))
 			filesize = bin(filesize)[2:].zfill(32)
@@ -112,26 +107,28 @@ def file_transfer(files,options):
 			f.close()
 
 		
-			if (s.recv(3) == "200"):
+			if (int(s.recv(3)) == FTF):
 				i += 1
 				if options.no_keep_alive == True:
-					response(s,"111")
+					response(s,ETF)
 				continue
 
 
-	response(s,"111")
+	response(s,ETF)
 	s.close()
 
 def main(options):
 	files = []
-	if options.dir != None:
-		for filename in glob.glob(options.dir+"/*"):
-			files.append(filename)		
-		file_transfer(files,options)
-	elif options.file != None:  
-		filename, file_extension = os.path.splitext(options.file)
-		files.append(filename+file_extension)
-		file_transfer(files,options)
+	if options.file != None:
+		if (isdir(options.file)):
+			for filename in glob.glob(options.file+"/*"):
+				files.append(filename)		
+			file_transfer(files,options)
+		else:  
+			filename, file_extension = os.path.splitext(options.file)
+			files.append(filename+file_extension)
+			file_transfer(files,options)
+	
 	elif options.command != None:
 		remote_control(options.command,options)
 	
