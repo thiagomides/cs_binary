@@ -1,0 +1,507 @@
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Fri Mar 23 14:14:49 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 23 14:14:50 2018
+DEBUG:root:[C] ('127.0.0.1', 51334)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51334)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51334)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51334)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51334)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51334)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51334)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 51336)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Fri Mar 23 14:18:24 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 23 14:18:25 2018
+DEBUG:root:[C] ('127.0.0.1', 51338)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51338)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51338)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51338)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51338)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51338)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51338)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 51340)
+DEBUG:root:[C] ('127.0.0.1', 51342)
+DEBUG:root:[C] ('127.0.0.1', 51344)
+DEBUG:root:[M] 01- Sinais.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 02 Fui.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 02. Medo De Amar.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 03 Abandonado.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 04 - Ainda Existe Amor em Nós.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 04 - Até O Sol Quis Ver.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 05 - A Gente Bota Pra Quebrar.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 06 - Pra mim não é.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 07 - Fui.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 08 - Calma Amor.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 13 - Insensato Destino - Mel Na Boca - Conselho.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 15. Pai.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - Dança do Bole-bole.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - Jeitinho Manhoso - Sincera (Extra).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - Jogo de sedução.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - Mega star.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - nuvens de algodão.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - Será Que Amor (Extra).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba - valeu.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Exaltasamba e Jorge Aragão - Eu E Você Sempre.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Grupo Bom Gosto - patricinha de olho azul.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] inimigos da hp - a paixão me pegou.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] inimigos da hp - brilho do seu olhar.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] inimigos da hp - caça e caçador.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] inimigos da hp - vem buscar o que é teu.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] jeito moleque e inimigos da hp - desengano.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2- Defunto Caguete.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2- Malandro é Malandro, Mané é Mané.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_a_necessidade.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_a_semente.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_bicho_ferroz.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_caro_amigo_bezerra.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_malandragem_da_um_tempo.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_malandro_rife.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_meu_bom_juiz.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_minha_sogra_parece_sapatao.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_partideiro_sem_no_na_garganta.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_quem_usa_antena_e_televisao.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_se_nao_fosse_o_samba.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Mv Bill e exaltasamba - livre pra voar (remix).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Péricles - linguagem dos olhos.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - Deus Me Livre.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - Me Diga.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - Pedi as Contas.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - Vida Cigana.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - Você Não Sabe de Mim.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Raça Negra - É Tarde Demais.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] revelação - aventureiro.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] revelação - coração blindado.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] 21 - Duas Vidas Num Só Ideal (Extra).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] inimigos da hp - toca um samba ai.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] marcelo_d2_-_pega_eu.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] revelação - deixa acontecer.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Revelação - ela só vai se for de camarote.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] revelação - eu te quero só pra mim.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Revelação - Fala Baixinho.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] revelação - todo mundo erra.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Revelação Mulher Traida.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Seu Jorge - Amiga da minha mulher.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - ainda existe amor em nós.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - clichê.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - Fica Combinado Assim.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - Instigante (Clipe Oficial).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - Tá bom, aham! (Áudio Oficial).mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto - Vai Chora.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Sorriso Maroto feat. Jorge e Mateus - Guerra Fria.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode - A Gente tem Tudo a Ver.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode - Aliança no Dedo.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do pagode - camisa 10.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode - Chora.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] turma do pagode - lancinho.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode - Luz, cama e ação.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode - Vish.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[M] Turma do Pagode feat. Sorriso Maroto - Tá Louco Héin.mp3 Send to ('127.0.0.1', 51344)
+DEBUG:root:[C] ('127.0.0.1', 51346)
+DEBUG:root:[C] ('127.0.0.1', 51354)
+DEBUG:root:[M] ACDC - Highway To Hell.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Céu Azul.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 01 Quebra-Mar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 03 Zóio de Lula.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 04 Vícios E Virtues.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 06 O Preco.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 07 Tudo Pro Alto.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 08 Não Uso Sapato.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 10 Tudo O Que Ela Gosta de Escutar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 11 Não É Sério.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 14 Samba Makossa.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 15 Quinta-Feira.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 17 Oba lá Vem Ela.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] 18 Tudo Mudar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] ACDC - Back In Black.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] ACDC - T.N.T..mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] AlbumArtSmall.jpg Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] AlbumArt_{213AFC74-09EE-4F1B-8917-88E9E1658820}_Large.jpg Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] AlbumArt_{213AFC74-09EE-4F1B-8917-88E9E1658820}_Small.jpg Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] capital inicial - a sua maneira.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] capital inicial - depois da meia-noite.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] capital inicial - eu nunca disse adeus.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Capital Inicial - Natasha.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] capital inicial - não olhe pra trás.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] capital inicial - primeiros erros.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Capital Inicial - Quatro Vezes Voce.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Contrastes da Vida.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Dias De Luta, Dias De Glória.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - ela vai voltar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Hoje Sou Eu Que Não Mais Te Quero.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Longe De Você.MP3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Lutar Pelo Que é Meu.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Me Encontra.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Meu Novo Mundo.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - O Errado Que Deu Certo.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - proibida pra mim.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Senhor do tempo.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Só os Loucos Sabem.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Só Por Uma Noite.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr - Te Levar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Um Dia a Gente Se Encontra.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Vem Ser Minha.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown Jr - Vou Me Embriagar de Você.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Charlie Brown jr e Vanessa da Mata - Uma Criança com Seu Olhar.mp3 Send to ('127.0.0.1', 51354)
+DEBUG:root:[M] Folder.jpg Send to ('127.0.0.1', 51354)
+DEBUG:root:[C] ('127.0.0.1', 51356)
+INFO:root:[M] 46 played arquivos/Mv Bill e exaltasamba - livre pra voar (remix).mp3
+DEBUG:root:[C] ('127.0.0.1', 51370)
+INFO:root:[M] 65 played arquivos/Seu Jorge - Amiga da minha mulher.mp3
+DEBUG:root:[C] ('127.0.0.1', 51372)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+INFO:root:[M] 114 played arquivos/Charlie Brown Jr - Meu Novo Mundo.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Fri Mar 23 14:28:39 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 23 14:28:40 2018
+DEBUG:root:[C] ('127.0.0.1', 51376)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51376)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51376)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51376)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51376)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51376)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51376)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 51384)
+DEBUG:root:[C] ('127.0.0.1', 51386)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:02:06 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:02:07 2018
+DEBUG:root:[C] ('127.0.0.1', 53216)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53216)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53216)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53216)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53216)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53216)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53216)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 53218)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:04:02 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:04:03 2018
+DEBUG:root:[C] ('127.0.0.1', 53222)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53222)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53222)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53222)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53222)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53222)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53222)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 53226)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:05:47 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:05:48 2018
+DEBUG:root:[C] ('127.0.0.1', 53228)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53228)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53228)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 53228)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53228)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53228)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 53228)
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 53230)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:07:02 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:07:10 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:07:20 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:07:21 2018
+DEBUG:root:[C] ('127.0.0.1', 48682)
+DEBUG:root:[C] ('127.0.0.1', 48684)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 48684)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 48684)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 48684)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 48684)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 48684)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 48684)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 48686)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:08:25 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:08:35 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:08:36 2018
+DEBUG:root:[C] ('127.0.0.1', 58308)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 58308)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 58308)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 58308)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 58308)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 58308)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 58308)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 58324)
+DEBUG:root:[C] ('127.0.0.1', 58330)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:11:16 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:11:25 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:11:26 2018
+DEBUG:root:[C] ('127.0.0.1', 49868)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49868)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49868)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49868)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49868)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49868)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49868)
+INFO:root:[M] 2 played arquivos/BK - Take Your Little Vision [Videoclipe Oficial].mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 49870)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:12:33 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:12:34 2018
+DEBUG:root:[C] ('127.0.0.1', 51732)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51732)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51732)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 51732)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51732)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51732)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 51732)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 51734)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:14:13 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:14:14 2018
+DEBUG:root:[C] ('127.0.0.1', 55706)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 55706)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 55706)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 55706)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 55706)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 55706)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 55706)
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 55708)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 10:15:55 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 10:15:56 2018
+DEBUG:root:[C] ('127.0.0.1', 54892)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 54892)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 54892)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 54892)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 54892)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 54892)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 54892)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 54894)
+INFO:root:[M] 2 played arquivos/BK - Take Your Little Vision [Videoclipe Oficial].mp3
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:27:36 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:27:37 2018
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:28:07 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:28:16 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:28:17 2018
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:28:49 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:28:50 2018
+DEBUG:root:[C] ('127.0.0.1', 39426)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39426)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39426)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39426)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39426)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39426)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39426)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 39428)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 39430)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 39432)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:30:15 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:30:16 2018
+DEBUG:root:[C] ('127.0.0.1', 36242)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 36242)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 36242)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 36242)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 36242)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 36242)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 36242)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 36244)
+DEBUG:root:[C] ('127.0.0.1', 36246)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+INFO:root:[M] 2 played arquivos/BK - Take Your Little Vision [Videoclipe Oficial].mp3
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 36474)
+INFO:root:[M] 2 played arquivos/BK - Take Your Little Vision [Videoclipe Oficial].mp3
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 36486)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 36490)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 36500)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:57:19 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:57:20 2018
+DEBUG:root:[C] ('127.0.0.1', 39150)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39150)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39150)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 39150)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39150)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39150)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 39150)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 39152)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:57:36 2018
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 11:58:11 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 11:58:12 2018
+DEBUG:root:[C] ('127.0.0.1', 34026)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 34026)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 34026)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 34026)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 34026)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 34026)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 34026)
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 34028)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 12:01:38 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 12:01:39 2018
+DEBUG:root:[C] ('127.0.0.1', 57812)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 57812)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 57812)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 57812)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 57812)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 57812)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 57812)
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 57814)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+DEBUG:root:[C] ('127.0.0.1', 57816)
+DEBUG:root:[C] ('127.0.0.1', 57818)
+DEBUG:root:[C] ('127.0.0.1', 57828)
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 23648
+DEBUG:root:[S] Repository clean Sat Mar 24 12:03:17 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Sat Mar 24 12:03:18 2018
+DEBUG:root:[C] ('127.0.0.1', 49888)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49888)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49888)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 49888)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49888)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49888)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 49888)
+INFO:root:[M] 3 played arquivos/BK - Top Boys [Videoclipe Oficial].mp3
+DEBUG:root:[C] ('127.0.0.1', 49890)
+DEBUG:root:[C] ('127.0.0.1', 49892)
+INFO:root:[M] 4 played arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+INFO:root:[M] 2 played arquivos/BK - Take Your Little Vision [Videoclipe Oficial].mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+INFO:root:[M] 1 played arquivos/BK - Deus Das Ruas [Videoclipe Oficial].mp3
+INFO:root:[M] 6 played arquivos/BK part. Juyè - Almas (Videoclipe Oficial).mp3
+INFO:root:[M] 5 played arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3
+DEBUG:root:[S]ystem init Sat Mar 24 12:26:27 2018

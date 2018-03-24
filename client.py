@@ -57,13 +57,34 @@ def remote_control(command,options):
 		s.send("next")
 	elif (command == "noow"):
 		s.send("noow")
+	elif (command == "play_music"):
+		s.send("pmus")
 	else:
 		print "Invalid command"
 		s.close()
 		return
 
-	data = s.recv(BUFFER_SIZE)
-	print data	
+	chunksize = 4096
+
+	size = 	int(s.recv(16), 2)
+	while size > 0:
+
+		if size < chunksize:
+			chunksize = size
+
+		data = s.recv(BUFFER_SIZE)  
+		print data
+		size -= len(data)            
+	
+	if (command == "play_music"):
+		x = raw_input("Entre com o identificador da musica: ")
+		while not (x.isdigit()):
+			print "Somente identificadores numericos sao aceitos"	
+			x = raw_input("Entre com o identificador da musica: ")
+			
+		s.send(x)
+		print s.recv(30)
+
 	s.close()
 
 
@@ -128,7 +149,6 @@ def main(options):
 			filename, file_extension = os.path.splitext(options.file)
 			files.append(filename+file_extension)
 			file_transfer(files,options)
-	
 	elif options.command != None:
 		remote_control(options.command,options)
 	

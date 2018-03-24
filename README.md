@@ -35,7 +35,7 @@ There are three ways to use this script:
 ### Command Line Help
 
     usage: client.py [-h] [--port PORT] [--address IP] [--command CMD] [--directory DIR]
-                  [--file DOF] 
+                  [--file DOF] [--no-keep-alive]
     
 
     Split client binary book by chapters.
@@ -44,12 +44,13 @@ There are three ways to use this script:
     	(filename or directory)               .* file(s) to be played
 
     optional arguments:
-      -h, --help            	show this help message and exit.
-      -p PORT, --port     PORT  port number to listen up (default: 3030)
-      -a IP, --address    IP	address number to listen up (default: 127.0.0.1)
-      --no-keep-alive        	connections are considered persistent unless a --no-keep-alive is included
-      -f DOF,  --file     DOF   path to binary file(s) or binary file
-      -c STR,  --command  CMD   customize chapter command (see README)
+      -h,      --help        	    show this help message and exit.
+      -p PORT, --port       PORT  port number to listen up (default: 3030)
+      -a IP,   --address    IP	  address number to listen up (default: 127.0.0.1)
+      -f DOF,  --file       DOF   path to binary file(s) or binary file
+      -c STR,  --command    CMD   customize chapter command (see README)
+      --no-keep-alive             connections are considered persistent unless a --no-keep-alive is included
+
   
 
 #### Chapter command

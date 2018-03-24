@@ -23,19 +23,22 @@ def clear_repository():
         os.remove("arquivos/"+file)
 
     ini = time.time()
-    logging.debug("[S] Repository clean "+ str(time.asctime( time.localtime(time.time()) )) )
+    logging.debug("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
     c = ["beep-01a.mp3"]
     played = []
-    played.append(0)
 
 def music_play(x):
     global c, noow
-    noow = c[x]
-    pygame.mixer.music.load(c[x])
-    pygame.mixer.music.play(0)
-    logging.info("[M] "+str(x)+ " played "+ str(c[x]))
-    played.append(x)
-    print(x, c[x])
+    if (x < len(c) + 1):
+        noow = c[x]
+        pygame.mixer.music.load(c[x])
+        pygame.mixer.music.play(0)
+        logging.info("[M] "+str(x)+ " played "+ str(c[x]))
+        played.append(x)
+        print(x, c[x])
+        return True
+    else:
+        return False
 
 
 
@@ -54,7 +57,7 @@ def music():
     queu()
 
 def queu():
-    global  c, played, noow
+    global  c, played
     pos = pygame.mixer.music.get_pos()
     
     try:
@@ -75,8 +78,12 @@ def queu():
     root.after(1000, server)
 
 
+def binary_encode(string,bits):
+    return bin(int(len(string)))[2:].zfill(int(bits))
+
 
 def response(client_socket,data):
+    client_socket.send(binary_encode(data,16))
     client_socket.send(data)  
     client_socket.close()
     
@@ -143,6 +150,15 @@ def remote_control(client_socket):
 
     elif(type == "noow"):
         response(client_socket,noow)
+
+    elif(type == "pmus"):
+        client_socket.send(binary_encode(get_playlist(),16))
+        client_socket.send(get_playlist())  
+        resp = music_play(int(client_socket.recv(3)))
+        if resp == False:
+            client_socket.send("Música não existente")
+        else:
+            client_socket.close()
     
     else:
         if (type == "next"):

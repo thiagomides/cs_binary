@@ -12,7 +12,7 @@ except ImportError:
 global BUFFER_SIZE
 global TCP_IP
 global SOCKET
-global ETF      # End Transfer File(s)
+global ETF      # End Transfer File
 global MTF      # Music Transfer File(s)
 global RCC 		# Remote Control Command
 global FTF 		# Finish Transfer File(s)
@@ -26,6 +26,6 @@ ETF = "111"
 FTF = "200"
 
 TCP_IP = "127.0.0.1"
-SOCKET = 3105
+SOCKET = 3118
 BUFFER_SIZE = 4096
 
