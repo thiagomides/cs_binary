@@ -20,7 +20,7 @@ def clear_repository():
     path = "arquivos/"
     
     for file in os.listdir(path):
-        os.remove("arquivos/"+file)
+        os.remove("../arquivos/"+file)
 
     ini = time.time()
     logging.debug("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
@@ -212,8 +212,8 @@ def main():
 
     logging.basicConfig(filename = 'example.log',level = logging.DEBUG)
     
-    if not(exists("arquivos/")):
-        os.mkdir("arquivos/")
+    if not(exists("../arquivos/")):
+        os.mkdir("../arquivos/")
     
     
 
