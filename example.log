@@ -2459,3 +2459,18 @@ INFO:root:[M] 4 played ../arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gig
 INFO:root:[M] 3 played ../arquivos/BK - Top Boys [Videoclipe Oficial].mp3
 DEBUG:root:[C] ('127.0.0.1', 34158)
 INFO:root:[M] 4 played ../arquivos/Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3
+DEBUG:PIL.PngImagePlugin:STREAM IHDR 16 13
+DEBUG:PIL.PngImagePlugin:STREAM pHYs 41 9
+DEBUG:PIL.PngImagePlugin:STREAM tEXt 62 25
+DEBUG:PIL.PngImagePlugin:STREAM IDAT 99 32778
+DEBUG:root:[S] Repository clean Mon Mar 26 10:05:27 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Mon Mar 26 10:05:28 2018
+DEBUG:root:[C] ('127.0.0.1', 41882)
+DEBUG:root:[M] BK - Deus Das Ruas [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 41882)
+DEBUG:root:[M] BK - Take Your Little Vision [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 41882)
+DEBUG:root:[M] BK - Top Boys [Videoclipe Oficial].mp3 Send to ('127.0.0.1', 41882)
+DEBUG:root:[M] Bk part Juyè  Luccas Carlos -  Antes dos gigantes chegarem (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 41882)
+DEBUG:root:[M] BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 41882)
+DEBUG:root:[M] BK part. Juyè - Almas (Videoclipe Oficial).mp3 Send to ('127.0.0.1', 41882)
+INFO:root:[M] 5 played ../arquivos/BK part. Akira Presidente - Adeus (Videoclipe Oficial).mp3

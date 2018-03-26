@@ -13,7 +13,10 @@ def parseArg():
 	parser.add_option("-a", "--address", dest="addr", help="address number to listen up (default: 127.0.0.1)",metavar="IP");
 	parser.add_option("-f", "--file", dest="file", help="folder to binary file(s) or binary file",metavar="DOF");
 	parser.add_option("-c", "--command", dest="command", help="customize chapter command (see README)",metavar="CMD")
+	parser.add_option("-e",'--extension',dest="ext",help='define files extension (default: /*.mp3',metavar="EXT")
 	parser.add_option('--no-keep-alive',dest="no_keep_alive", action='store_true',help='connections are  considered persistent unless a --no-keep-alive header is included')
+
+
 
 	(options, args) = parser.parse_args()
 
@@ -25,6 +28,8 @@ def parseArg():
 		options.addr = "127.0.0.1"
 	if options.file != None and not(exists(options.file)):
 		exit("Directory or File doenst exist")
+	if options.ext == None:
+		options.ext = "/*.mp3"
 	
 	return (options, args)
 
@@ -142,7 +147,7 @@ def main(options):
 	files = []
 	if options.file != None:
 		if (isdir(options.file)):
-			for filename in glob.glob(options.file+"/*"):
+			for filename in glob.glob(options.file+options.ext):
 				files.append(filename)		
 			file_transfer(files,options)
 		else:  

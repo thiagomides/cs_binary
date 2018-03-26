@@ -93,6 +93,7 @@ There are three ways to use this script:
       -a IP,   --address    IP	  address number to listen up (default: 127.0.0.1)
       -f DOF,  --file       DOF   directory to binary file(s) or binary file
       -c STR,  --command    CMD   customize chapter command (see README)
+      -e EXT,  --extension  EXT   define files extension (default: /*.mp3)
       --no-keep-alive             connections are considered persistent unless a --no-keep-alive is included
 
   
@@ -108,6 +109,7 @@ You can customize the chapter command with `--command CMD` where `CMD` is a vali
       stop                temporarily stop playback of all sound channels
       noow                return the music name
       rewind              restart music
+      play_music          play music by identificator
 
   
 
