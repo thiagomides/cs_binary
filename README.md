@@ -13,6 +13,7 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
     - [Installation](#installation)
       - [Windows](#windows)
       - [Ubuntu 16.10](#ubuntu-16.10)
+    - [Cloning a Repository](#cloning-a-repository)
     - [Client](#client-usage)
       - [Command Line Help](#command-line-help)
         - [Chapter command](#chapter-command)
@@ -54,6 +55,14 @@ Our address is:
 ### Ubuntu 16.10
 
 1. Install packages: `sudo apt-get install python2.7 python3-pygame`
+
+### Cloning a Repository
+
+When cloning a repository the `.git` can be left off the end.
+
+```bash
+$ git clone https://github.com/thiagomides/cs_binary.git
+```
 
 
 ## Client usage
