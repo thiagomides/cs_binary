@@ -11,9 +11,9 @@ def parseArg():
 
 	parser.add_option("-p", "--port", dest="port", help="port number to listen up (default: 3030)", metavar="PORT",type="int");
 	parser.add_option("-a", "--address", dest="addr", help="address number to listen up (default: 127.0.0.1)",metavar="IP");
-	parser.add_option('--no-keep-alive',dest="no_keep_alive", action='store_true',help='connections are  considered persistent unless a --no-keep-alive header is included')
-	parser.add_option("-f", "--file", dest="file", help="path to binary file(s) or binary file",metavar="DOF");
+	parser.add_option("-f", "--file", dest="file", help="folder to binary file(s) or binary file",metavar="DOF");
 	parser.add_option("-c", "--command", dest="command", help="customize chapter command (see README)",metavar="CMD")
+	parser.add_option('--no-keep-alive',dest="no_keep_alive", action='store_true',help='connections are  considered persistent unless a --no-keep-alive header is included')
 
 	(options, args) = parser.parse_args()
 

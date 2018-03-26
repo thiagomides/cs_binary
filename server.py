@@ -4,22 +4,38 @@ import os,random,logging,socket,threading,time,pygame
 from param import *
 from PIL import Image, ImageTk
 from os.path import exists
+from optparse import OptionParser
+
 
 root = Tk()
-ini = 0
-fim = 0
-noow = ""
+root.title('Server')
+ini,fim,port  = 0,0,0
+noow,dirc = "",""
+c,played = ["beep-01a.mp3"],[]
 
-played = []
-c = ["beep-01a.mp3"]
+
+
+def parseArg():
+    parser = OptionParser()
+
+    parser.add_option("-p", "--port", dest="port", help="port number to listen up (default: 3030)", metavar="PORT",type="int");
+    parser.add_option("-d", "--directory", dest="dir", help="binary(s) storage folder (default: ../arquivos/)",metavar="dir");
+    
+    (options, args) = parser.parse_args()
+
+    if options.port == None:
+        options.port = 3030
+    if options.dir == None: 
+        options.dir = "../arquivos/"
+    
+    return (options, args)
+
 
 
 def clear_repository():
-    global c,played
+    global c,played,dirc
 
-    path = "arquivos/"
-    
-    for file in os.listdir(path):
+    for file in os.listdir(dirc):
         os.remove("../arquivos/"+file)
 
     ini = time.time()
@@ -96,7 +112,7 @@ def get_playlist():
 
 
 def music_transfer(client_socket,addr):
-
+    global dirc
     while True:
 
         type = client_socket.recv(3)
@@ -112,7 +128,7 @@ def music_transfer(client_socket,addr):
         filesize = client_socket.recv(32)
         filesize = int(filesize, 2)
         
-        file = open("arquivos/"+name, 'w')
+        file = open(dirc+name, 'w')
         chunksize = BUFFER_SIZE
         
         while filesize > 0:
@@ -125,7 +141,7 @@ def music_transfer(client_socket,addr):
             
         file.close()
 
-        c.append("arquivos/"+name)
+        c.append(dirc+name)
         logging.debug("[M] "+name+ " Send to "+ str(addr))
 
         
@@ -188,8 +204,9 @@ def execute_music():
    
 
 def server():
+    global port
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
-    s.bind((TCP_IP, SOCKET))
+    s.bind((TCP_IP, port))
     s.listen(5)
     s.settimeout(1.0)
     ini = time.time()
@@ -208,14 +225,15 @@ def server():
             if ((fim - ini) > 3600):
                 clear_repository()      
             
-def main():
-
+def main(options):
+    global port, dirc
     logging.basicConfig(filename = 'example.log',level = logging.DEBUG)
     
-    if not(exists("../arquivos/")):
-        os.mkdir("../arquivos/")
+    if not(exists(options.dir)):
+        os.mkdir(options.dir)
     
-    
+    port = options.port
+    dirc = options.dir
 
     image = Image.open("wallpapper1.png")
     photo = ImageTk.PhotoImage(image)
@@ -232,4 +250,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    (options, args) = parseArg()
+    main(options)

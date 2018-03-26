@@ -6,12 +6,6 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
 *Read this in other languages: [Portuguese](README.md)*
 
 
-## Table of Contents
-  - [CS](#cs_binary)
-    - [License](#license)
-    - [Requirements](#requirements)
-
-
 ## License
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
