@@ -10,6 +10,16 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
   - [CS](#cs_binary)
     - [License](#license)
     - [Requirements](#requirements)
+    - [Installation](#installation)
+      - [Windows](#windows)
+      - [Ubuntu 16.10](#ubuntu-16.10)
+    - [Client](#client-usage)
+      - [Command Line Help](#command-line-help)
+        - [Chapter command](#chapter-command)
+      - [Examples](#examples)   
+    - [Server](#server-usage)
+      - [Command Line Help](#command-line-help-1)
+      - [Examples](#examples-1)
 
 
 ## License
