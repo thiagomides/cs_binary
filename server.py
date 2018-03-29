@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os,random,logging,socket,threading,time,pygame 
+import os,random,logging,socket,threading,time,pygame,param 
 from param import *
 from PIL import Image, ImageTk
 from os.path import exists
@@ -9,7 +9,7 @@ from optparse import OptionParser
 
 root = Tk()
 root.title('Server')
-ini,fim,port  = 0,0,0
+port  = 0
 noow,dirc = "",""
 c,played = ["beep-01a.mp3"],[]
 
@@ -38,7 +38,7 @@ def clear_repository():
     for file in os.listdir(dirc):
         os.remove("../arquivos/"+file)
 
-    ini = time.time()
+    param.INI = time.time()
     logging.debug("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
     c = ["beep-01a.mp3"]
     played = []
@@ -209,7 +209,7 @@ def server():
     s.bind((TCP_IP, port))
     s.listen(5)
     s.settimeout(1.0)
-    ini = time.time()
+    param.INI = time.time()
     date_time = time.asctime(time.localtime(time.time()) )
     logging.debug("[S]ystem init "+ str(date_time) )
     while True:
@@ -221,8 +221,8 @@ def server():
             t = threading.Thread(target=control, args=(conn, addr),)   
             t.run()
         except socket.timeout:
-            fim = time.time()
-            if ((fim - ini) > 3600):
+            param.FIM = time.time()
+            if ((param.FIM - param.INI) > 3600):
                 clear_repository()      
             
 def main(options):
