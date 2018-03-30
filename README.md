@@ -14,6 +14,7 @@ Este repositório contem o código Client-Server desenvolvido para disciplina de
       - [Cloning a Repository](#cloning-a-repository)
       - [Windows](#windows)
       - [Ubuntu 16.10](#ubuntu-16.10)
+        - [Unix Binary Packages](#unix-binary-packages)
     - [Client](#client-usage)
       - [Command Line Help](#command-line-help)
         - [Chapter command](#chapter-command)
@@ -64,7 +65,7 @@ $ git clone https://github.com/thiagomides/cs_binary.git
 
 ### Ubuntu 16.10
 
-1. Install packages: `sudo apt-get install python2.7 python3-pygame`
+1. Install packages: `sudo apt-get install python2.7 python-pygame`
 
 
 #### Unix Binary Packages
