@@ -1,11 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+
+
 import os,random,logging,socket,threading,time,pygame,param 
 from param import *
+import PIL
 from PIL import Image, ImageTk
 from os.path import exists
 from optparse import OptionParser
 
+
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter 
+except ImportError:
+    # for Python3
+    from tkinter import *   ## notice lowercase 't' in tkinter here
 
 root = Tk()
 root.title('Server')
@@ -235,7 +246,7 @@ def main(options):
     port = options.port
     dirc = options.dir
 
-    image = Image.open("wallpapper1.png")
+    image = PIL.Image.open("wallpapper1.png")
     photo = ImageTk.PhotoImage(image)
 
     label = Label(image = photo)

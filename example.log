@@ -2622,3 +2622,24 @@ INFO:root:[M] 54 played ../arquivos/Ramonzin_-_Se_ela_soubesse...(single)_Conexa
 DEBUG:root:[C] ('127.0.0.1', 60358)
 INFO:root:[M] 57 played ../arquivos/Sabotage - mum rá.mp3
 DEBUG:root:[C] ('127.0.0.1', 60362)
+DEBUG:PIL.PngImagePlugin:STREAM 'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM 'pHYs' 41 9
+DEBUG:PIL.PngImagePlugin:STREAM 'tEXt' 62 25
+DEBUG:PIL.PngImagePlugin:STREAM 'IDAT' 99 32778
+DEBUG:root:[S] Repository clean Fri Mar 30 13:14:41 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 30 13:14:42 2018
+DEBUG:PIL.PngImagePlugin:STREAM 'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM 'pHYs' 41 9
+DEBUG:PIL.PngImagePlugin:STREAM 'tEXt' 62 25
+DEBUG:PIL.PngImagePlugin:STREAM 'IDAT' 99 32778
+DEBUG:root:[S] Repository clean Fri Mar 30 13:15:11 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 30 13:15:12 2018
+DEBUG:PIL.PngImagePlugin:STREAM 'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM 'pHYs' 41 9
+DEBUG:PIL.PngImagePlugin:STREAM 'tEXt' 62 25
+DEBUG:PIL.PngImagePlugin:STREAM 'IDAT' 99 32778
+DEBUG:root:[S] Repository clean Fri Mar 30 13:15:43 2018
+INFO:root:[M] 0 played beep-01a.mp3
+DEBUG:root:[S]ystem init Fri Mar 30 13:15:44 2018

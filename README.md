@@ -32,7 +32,7 @@ Our address is:
 
     Universidade Federal de São João del-Rei – UFSJ
     Campus Tancredo de Almeida Neves – CTAN
-      Prédio do Curso de Ciência da Computação, 3° andar/Sala nº 3.01A
+    Prédio do Curso de Ciência da Computação, 3° andar/Sala nº 3.01A
     Av. Visconde do Rio Preto, s/nº, Colônia do Bengo,
     São João del-Rei, MG, CEP 36301-360
 
@@ -41,8 +41,11 @@ Our address is:
 ## Requirements
 
 * [Python](http://www.python.org/download/) (tested with v2.7)
+* [python-tk]()
+* [Pillow]()()
 * [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)
 * [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)
+
 
 
 ## Installation
@@ -53,7 +56,7 @@ Our address is:
 When cloning a repository the `.git` can be left off the end.
 
 ```bash
-$ git clone https://github.com/thiagomides/cs_binary.git
+$ git clone --depth 1 https://github.com/thiagomides/cs_binary.git
 ```
 
 
@@ -62,10 +65,15 @@ $ git clone https://github.com/thiagomides/cs_binary.git
 1. Install python 2.7.
 2. Download pip then [compile](https://bootstrap.pypa.io/get-pip.py) and install.
 3. Install package Pygame `py -m pip install -U pygame --user`
+4. Tutorial for install python-tk [tutorial](http://www.tkdocs.com/tutorial/install.html#installwin)
+5. Install package Pillow `pip install Pillow`
 
-### Ubuntu 16.10
+### Ubuntu 18.04
 
-1. Install packages: `sudo apt-get install python2.7 python-pygame`
+1. Install packages: `sudo apt-get install python2.7 python-pygame python-tk`
+2. Download pip then [compile](https://bootstrap.pypa.io/get-pip.py) and install.
+3. Install package Pillow `pip install Pillow`
+
 
 
 #### Unix Binary Packages
