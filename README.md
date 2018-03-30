@@ -67,6 +67,13 @@ $ git clone https://github.com/thiagomides/cs_binary.git
 1. Install packages: `sudo apt-get install python2.7 python3-pygame`
 
 
+#### Unix Binary Packages
+
+| Distribution | Python 3 package | Python 2 package |
+| ----- | ---- | ---- |
+| Debian/Ubuntu | python3-pygame |  python-pygame |
+| Fedora/Ubuntu | python3-pygame |  pygame |
+
 ## Client usage
 
 There are three ways to use this script:
