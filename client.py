@@ -71,7 +71,7 @@ def remote_control(command,options):
 
 	chunksize = 4096
 
-	size = 	int(s.recv(16), 2)
+	size = int(s.recv(16), 2)
 	text = ""
 	while size > 0:
 

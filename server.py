@@ -1,32 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-
-import os,random,logging,socket,threading,time,pygame,param 
+import os,random,logging,socket,threading,time,pygame,param, PIL 
 from param import *
-import PIL
 from PIL import Image, ImageTk
 from os.path import exists
 from optparse import OptionParser
 
 
-try:
-    # for Python2
-    from Tkinter import *   ## notice capitalized T in Tkinter 
-except ImportError:
-    # for Python3
-    from tkinter import *   ## notice lowercase 't' in tkinter here
-
-root = Tk()
-root.title('Server')
-port  = 0
-noow,dirc = "",""
-c,played = ["beep-01a.mp3"],[]
-
-
-
 def parseArg():
+    
     parser = OptionParser()
 
     parser.add_option("-p", "--port", dest="port", help="port number to listen up (default: 3030)", metavar="PORT",type="int");
@@ -36,42 +19,53 @@ def parseArg():
 
     if options.port == None:
         options.port = 3030
+
     if options.dir == None: 
         options.dir = "../arquivos/"
     
+    if not(exists(options.dir)):
+        os.mkdir(options.dir)
+
+
     return (options, args)
 
-
-
 def clear_repository():
-    global c,played,dirc
-
-    for file in os.listdir(dirc):
+    
+    for file in os.listdir(param.DIR):
         os.remove("../arquivos/"+file)
 
+    param.SET_LIST = ["beep-01a.mp3"]
+    param.PLAYED = []
+    
     param.INI = time.time()
-    logging.debug("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
-    c = ["beep-01a.mp3"]
-    played = []
+    logging.info("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
+    
 
 def music_play(x):
-    global c, noow
-    if (x < len(c) + 1):
-        noow = c[x]
-        pygame.mixer.music.load(c[x])
+
+    if (x < len(param.SET_LIST)):
+
+
+        pygame.mixer.music.load(param.SET_LIST[x])
         pygame.mixer.music.play(0)
-        logging.info("[M] "+str(x)+ " played "+ str(c[x]))
-        played.append(x)
-        print(x, c[x])
+    
+        param.NOW = x
+        param.PLAYED.append(x)
+    
+        logging.info("[M] "+str(x)+ " played "+ str(param.SET_LIST[x]))
+        print(x, param.SET_LIST[x])
+
         return True
-    else:
-        return False
+
+    return False
 
 
 
 def music():
     pygame.init()
+
     try:
+
         pygame.mixer.pre_init(44100, -16, 2)
         pygame.mixer.init(44100, -16, 1, 4096)
     
@@ -81,28 +75,27 @@ def music():
         exit()
 
     music_play(0)
-    queu()
+    queue()
 
-def queu():
-    global  c, played
+def queue():
     pos = pygame.mixer.music.get_pos()
     
-    try:
-      if int(pos) == -1:
-        j = 0
-        x = random.randint(1,len(c))
-        while x in played:
-            if j == len(c):
-                played = []
-                j = 0
-            j += 1
-            x = random.randint(1,len(c))            
-        
-        music_play(x)
+    if int(pos) == -1:
 
-    except:
-      pass
-    root.after(1000, server)
+        j = 0
+        x = random.randint(1,len(param.SET_LIST))
+        if len(param.SET_LIST) > 1:
+            while x in param.PLAYED:
+                if j == len(param.SET_LIST):
+                    param.PLAYED = []
+                    j = 0
+                j += 1
+                x = random.randint(1,len(param.SET_LIST)  - 1) 
+
+            music_play(x)
+
+
+    param.ROOT.after(1000, server)
 
 
 def binary_encode(string,bits):
@@ -115,15 +108,13 @@ def response(client_socket,data):
     client_socket.close()
     
 def get_playlist():
-    global c
     playlist = ""
-    for x in range(0,len(c)):
-        playlist = playlist + str(x) + " - " + c[x] + "\n"
+    for x in range(0,len(param.SET_LIST)):
+        playlist = playlist + str(x) + " - " + param.SET_LIST[x] + "\n"
     return playlist
 
 
 def music_transfer(client_socket,addr):
-    global dirc
     while True:
 
         type = client_socket.recv(3)
@@ -139,7 +130,7 @@ def music_transfer(client_socket,addr):
         filesize = client_socket.recv(32)
         filesize = int(filesize, 2)
         
-        file = open(dirc+name, 'w')
+        file = open(param.DIR+name, 'w')
         chunksize = BUFFER_SIZE
         
         while filesize > 0:
@@ -152,8 +143,8 @@ def music_transfer(client_socket,addr):
             
         file.close()
 
-        c.append(dirc+name)
-        logging.debug("[M] "+name+ " Send to "+ str(addr))
+        param.SET_LIST.append(param.DIR+name)
+        logging.info("[M] "+name+ " Send to "+ str(addr))
 
         
         client_socket.send(FTF)
@@ -161,7 +152,6 @@ def music_transfer(client_socket,addr):
     client_socket.close()
 
 def remote_control(client_socket):
-    global c,x
     type = client_socket.recv(4)
     
     if type == "list":
@@ -176,11 +166,13 @@ def remote_control(client_socket):
         response(client_socket,"Play Music")
 
     elif(type == "noow"):
-        response(client_socket,noow)
+        response(client_socket,param.SET_LIST[param.NOW])
 
     elif(type == "pmus"):
+
         client_socket.send(binary_encode(get_playlist(),16))
         client_socket.send(get_playlist())  
+
         resp = music_play(int(client_socket.recv(3)))
         if resp == False:
             client_socket.send("Música não existente")
@@ -188,47 +180,50 @@ def remote_control(client_socket):
             client_socket.close()
     
     else:
-        if (type == "next"):
-            msg = "No Music List"
-            if len(c) > 1:
-                music_play(random.randint(1,len(c)))
-                msg = "Next Music"    
+        msg = "No Music List"
+        if len(param.SET_LIST) == 1:
             response(client_socket,msg)
+
+        elif (type == "next"):
+            music_play(random.randint(1,len(param.SET_LIST)  - 1 ))
+            msg = "Next Music"    
            
         elif (type == "rewi"):
-            
-            pygame.mixer.music.rewind()
-            client_socket.send("Repeat Music")
-            logging.info("[Music] "+str(x)+ " played "+ str(c[x]))
+            msg = "Repeat Music"
+            music_play(param.NOW)
+
+        response(client_socket,msg)
+    
+
 
 def control(client_socket,addr):
     type = client_socket.recv(3)
+
     if type == MTF:
         music_transfer(client_socket,addr)
+
     elif type == RCC:
         remote_control(client_socket)
         
     
     
 def execute_music():
-    root.mainloop()   
+    param.ROOT.mainloop()   
    
 
 def server():
-    global port
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   
-    s.bind((TCP_IP, port))
+    s.bind((TCP_IP, param.PORT))
     s.listen(5)
     s.settimeout(1.0)
     param.INI = time.time()
-    date_time = time.asctime(time.localtime(time.time()) )
-    logging.debug("[S]ystem init "+ str(date_time) )
+    logging.info("[S]ystem init "+ str(time.asctime(time.localtime(param.INI))))
     while True:
-        queu()
+        queue()
         try:
             (conn, addr) = s.accept()
             print 'Connection address:', addr
-            logging.debug("[C] "+ str(addr) )
+            logging.info("[C] "+ str(addr) )
             t = threading.Thread(target=control, args=(conn, addr),)   
             t.run()
         except socket.timeout:
@@ -236,25 +231,27 @@ def server():
             if ((param.FIM - param.INI) > 3600):
                 clear_repository()      
             
-def main(options):
-    global port, dirc
-    logging.basicConfig(filename = 'example.log',level = logging.DEBUG)
-    
-    if not(exists(options.dir)):
-        os.mkdir(options.dir)
-    
-    port = options.port
-    dirc = options.dir
 
+def tk_settings():
     image = PIL.Image.open("wallpapper1.png")
     photo = ImageTk.PhotoImage(image)
 
     label = Label(image = photo)
     label.image = photo 
+
     label.place(x = 0, y = 0, relwidth = 1, relheight = 1)
     label.pack()
 
+def main(options):
+ 
+    logging.basicConfig(filename = 'example.log',level = logging.INFO)
+    
+    param.PORT = options.port
+    param.DIR = options.dir
+
+    tk_settings()
     clear_repository()
+
     music()
     execute_music()
 

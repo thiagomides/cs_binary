@@ -1,7 +1,6 @@
 # cs_binary
 
-Este repositório contem o código Client-Server desenvolvido para disciplina de Redes de Computadores, do Mestrado em Ciência da Computação - Universidade Federal de São João del Rei 
-
+This music play Client-Server repository a developed for Computer Networks discipline of Federal São João del Rei University.
 
 *Read this in other languages: [Portuguese](README.md)*
 
@@ -41,8 +40,7 @@ Our address is:
 ## Requirements
 
 * [Python](http://www.python.org/download/) (tested with v2.7)
-* [python-tk]()
-* [Pillow]()()
+* [Pillow](https://pillow.readthedocs.io/en/latest/)(tested with pillow >= 5.0.0)
 * [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)
 * [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)
 
@@ -70,10 +68,16 @@ $ git clone --depth 1 https://github.com/thiagomides/cs_binary.git
 
 ### Ubuntu 18.04
 
-1. Install packages: `sudo apt-get install python2.7 python-pygame python-tk`
-2. Download pip then [compile](https://bootstrap.pypa.io/get-pip.py) and install.
-3. Install package Pillow `pip install Pillow`
+#### Manual Installation
 
+1. Install packages: `sudo apt-get install python2.7 python-pygame python-tk python-pip`
+2. Install package Pillow `pip install Pillow`
+
+#### Automatic Installation
+
+```bash
+    sudo chmod +X setup.sh && ./setup.sh
+```
 
 
 #### Unix Binary Packages
