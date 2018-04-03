@@ -13,6 +13,8 @@ This music play Client-Server repository a developed for Computer Networks disci
       - [Cloning a Repository](#cloning-a-repository)
       - [Windows](#windows)
       - [Ubuntu 16.10](#ubuntu-16.10)
+        - [Manual Installation](#manual-installation)
+        - [Automatic Installation](#automatic-installation)
         - [Unix Binary Packages](#unix-binary-packages)
     - [Client](#client-usage)
       - [Command Line Help](#command-line-help)
@@ -40,11 +42,12 @@ Our address is:
 ## Requirements
 
 * [Python](http://www.python.org/download/) (tested with v2.7)
-* [Pillow](https://pillow.readthedocs.io/en/latest/)(tested with pillow >= 5.0.0)*
+* [Pillow](https://pillow.readthedocs.io/en/latest/) (tested with pillow >= 5.0.0)*
 * [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)*
 * [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)*
 
 `* required only when running the server`
+
 ## Installation
 
 
