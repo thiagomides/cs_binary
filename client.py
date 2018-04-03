@@ -69,7 +69,7 @@ def remote_control(command,options):
 		s.close()
 		return
 
-	chunksize = 4096
+	chunksize = BUFFER_SIZE
 
 	size = int(s.recv(16), 2)
 	text = ""

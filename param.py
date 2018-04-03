@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import PIL 
+from PIL import Image, ImageTk
+
 try:
     # for Python2
     from Tkinter import *   ## notice capitalized T in Tkinter 

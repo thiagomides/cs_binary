@@ -1,8 +1,8 @@
 # cs_binary
 
-This music play Client-Server repository a developed for Computer Networks discipline of Federal São João del Rei University.
+This client-server repository of music reproduction was developed for the discipline of Computer Networks of the Federal University of São João del Rei.
 
-*Read this in other languages: [Portuguese](README.md)*
+*Read this in other languages: [Portuguese](README.pt.md)*
 
 
 ## Table of Contents
@@ -12,7 +12,7 @@ This music play Client-Server repository a developed for Computer Networks disci
     - [Installation](#installation)
       - [Cloning a Repository](#cloning-a-repository)
       - [Windows](#windows)
-      - [Ubuntu 16.10](#ubuntu-16.10)
+      - [Ubuntu 18.04](#ubuntu-18.04)
         - [Manual Installation](#manual-installation)
         - [Automatic Installation](#automatic-installation)
         - [Unix Binary Packages](#unix-binary-packages)

@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os,random,logging,socket,threading,time,pygame,param, PIL 
+import os,random,logging,socket,threading,time,pygame,param
 from param import *
-from PIL import Image, ImageTk
 from os.path import exists
 from optparse import OptionParser
 
@@ -232,15 +231,7 @@ def server():
                 clear_repository()      
             
 
-def tk_settings():
-    image = PIL.Image.open("wallpapper1.png")
-    photo = ImageTk.PhotoImage(image)
 
-    label = Label(image = photo)
-    label.image = photo 
-
-    label.place(x = 0, y = 0, relwidth = 1, relheight = 1)
-    label.pack()
 
 def main(options):
  
