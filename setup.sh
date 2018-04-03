@@ -1,8 +1,15 @@
 #SetuP- V0.1
 
-echo "Executando AutoSetup - Configurado para Ubuntu"
-echo "Versão Experimental 0.1"
-echo "Instalando dependencias"
-echo "Instalando o Pip"
-sudo apt-get install python2.7 python-pygame python-tk python-pip
+echo "AutoSetup for Ubuntu"
+echo "Installing dependencies"
+
+echo "Python 2.7 install"
+sudo apt-get install python2.7 
+echo "Pygame install"
+sudo apt-get install python-pygame
+echo "Python Tk install"
+sudo apt-get install python-tk
+echo "Pip Install"
+sudo apt-get install python-pip
+echo "Pillow Install"
 pip install Pillow

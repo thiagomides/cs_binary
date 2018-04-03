@@ -40,12 +40,11 @@ Our address is:
 ## Requirements
 
 * [Python](http://www.python.org/download/) (tested with v2.7)
-* [Pillow](https://pillow.readthedocs.io/en/latest/)(tested with pillow >= 5.0.0)
-* [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)
-* [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)
+* [Pillow](https://pillow.readthedocs.io/en/latest/)(tested with pillow >= 5.0.0)*
+* [Tkinter](http://www.tkdocs.com/tutorial/install.html) (tested with 8.6)*
+* [py-game](https://www.pygame.org/wiki/GettingStarted) (v3.6.1)*
 
-
-
+`* required only when running the server`
 ## Installation
 
 
