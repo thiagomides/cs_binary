@@ -6,23 +6,23 @@ Este repositório cliente-servidor de reprodução musical foi desenvolvido para
 
 
 ## Índice
-  - [CS](#cs_binary)
-    - [Licença](#licenca)
-    - [Requisitos](#requisitos)
-    - [Instalação](#instalacao)
-      - [Clonar Repositório](#clonar-repositorio)
-      - [Windows](#windows)
-      - [Ubuntu 18.04](#ubuntu-18.04)
-        - [Instalação Manual](#instalacao-manual)
-        - [Instalação Automática](#instalacao-automatica)
-        - [Pacotes Binários Unix](#pacotes-binarios-unix)
-    - [Cliente](#cliente)
-      - [Linha de Comando](#linha-de-comando)
-        - [Comandos](#comandos)
-      - [Exemplos](#exemplos)   
-    - [Servidor](#servidor)
-      - [Linha de Comando](#linha-de-comando-1)
-      - [Exemplos](#exemplos-1)
+- [Descrição](#cs_binary)
+- [Licença](#licença)
+- [Requisitos](#requisitos)
+- [Instalação](#instalação)
+  - [Clonar Repositório](#clonar-repositorio)
+  - [Windows](#windows)
+  - [Ubuntu 18.04](#ubuntu-18.04)
+    - [Instalação Manual](#instalação-manual)
+    - [Instalação Automática](#instalação-automática)
+    - [Pacotes Binários Unix](#pacotes-binários-unix)
+- [Cliente](#cliente)
+  - [Linha de Comando](#linha-de-comando)
+    - [Comandos](#comandos)
+  - [Exemplos](#exemplos)   
+- [Servidor](#servidor)
+  - [Linha de Comando](#linha-de-comando-1)
+  - [Exemplos](#exemplos-1)
 
 
 ## Licença
@@ -121,7 +121,7 @@ Existem três maneiras de usar este script:
   
 
 #### Comandos
-Você pode personalizar o comando chapter com `--command CMD`, onde `CMD` é um python [format string] válido (http://docs.python.org/library/stdtypes.html#string-formatting-operations).
+Você pode personalizar o capítulo de comando com `--command CMD`, onde `CMD` é uma [string](http://docs.python.org/library/stdtypes.html#string-formatting-operations) python.
 
     command arguments:
       list                devolver playlist agora
