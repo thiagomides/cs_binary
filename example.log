@@ -70,3 +70,49 @@ INFO:root:[CMD] GET LIST to ('127.0.0.1', 34208) Mon Apr  9 08:04:53 2018
 INFO:root:[CONNECT] ('127.0.0.1', 34214) Mon Apr  9 08:04:53 2018
 INFO:root:[CMD] STOP MUSIC to ('127.0.0.1', 34214) Mon Apr  9 08:04:53 2018
 INFO:root:[SERVER] Repository clean Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35792) Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] PLAY MUSIC to ('127.0.0.1', 35792) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35796) Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] STOP MUSIC to ('127.0.0.1', 35796) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 05 Misty Mountain Hop.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 08 When The Levee Breaks.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 03 The Battle Of Evermore.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 06 Four Sticks.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 01 Black Dog.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 04 Stairway To Heaven.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 07 Going To California.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 02 Rock And Roll.mp3 Send to ('127.0.0.1', 35798) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35800) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 8 played ../arquivos/02 Rock And Roll.mp3 Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] MUSIC ../arquivos/02 Rock And Roll.mp3 PLAY to ('127.0.0.1', 35800) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35804) Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] GET LIST to ('127.0.0.1', 35804) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35828) Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] GET LIST to ('127.0.0.1', 35828) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 7 played ../arquivos/07 Going To California.mp3 Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35836) Mon Apr  9 09:39:01 2018
+INFO:root:[MUSIC] 5 played ../arquivos/01 Black Dog.mp3 Mon Apr  9 09:39:01 2018
+INFO:root:[CMD] MUSIC ../arquivos/01 Black Dog.mp3 PLAY to ('127.0.0.1', 35836) Mon Apr  9 09:39:01 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35838) Mon Apr  9 09:39:01 2018
+INFO:root:[SERVER] Repository clean Mon Apr  9 10:29:16 2018
+INFO:root:[MUSIC] 0 played beep-01a.mp3 Mon Apr  9 10:29:16 2018
+INFO:root:[SERVER] Init Mon Apr  9 10:29:17 2018
+INFO:root:[CONNECT] ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 05 Misty Mountain Hop.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 08 When The Levee Breaks.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 03 The Battle Of Evermore.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 06 Four Sticks.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 01 Black Dog.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 04 Stairway To Heaven.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 07 Going To California.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 02 Rock And Roll.mp3 Send to ('127.0.0.1', 33908) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 6 played ../arquivos/04 Stairway To Heaven.mp3 Mon Apr  9 10:29:17 2018
+INFO:root:[CONNECT] ('127.0.0.1', 33972) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 01 Black Dog.mp3 Send to ('127.0.0.1', 33972) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 4 played ../arquivos/06 Four Sticks.mp3 Mon Apr  9 10:29:17 2018
+INFO:root:[CONNECT] ('127.0.0.1', 34456) Mon Apr  9 10:29:17 2018
+INFO:root:[CMD] GET LIST to ('127.0.0.1', 34456) Mon Apr  9 10:29:17 2018
+INFO:root:[CONNECT] ('127.0.0.1', 34458) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 6 played ../arquivos/04 Stairway To Heaven.mp3 Mon Apr  9 10:29:17 2018
+INFO:root:[CMD] MUSIC ../arquivos/04 Stairway To Heaven.mp3 PLAY to ('127.0.0.1', 34458) Mon Apr  9 10:29:17 2018
