@@ -53,7 +53,7 @@ Endereço:
 
 ### Clonar Repositório
 
-Ao clonar um repositório, o `.git` pode ser deixado fora do final.
+Ao clonar um repositório, o `.git` do final pode ser ignorado.
 
 ```bash
 $ git clone --depth 1 https://github.com/thiagomides/cs_binary.git
@@ -63,7 +63,7 @@ $ git clone --depth 1 https://github.com/thiagomides/cs_binary.git
 ### Windows
 
 1. Instalar python 2.7.
-2. Download pip então [compilar](https://bootstrap.pypa.io/get-pip.py) e instalar.
+2. Download pip então [compilar](https://bootstrap.pypa.io/get-pip.py) em seguida instalar.
 3. Instalar pacote Pygame `py -m pip install -U pygame --user`
 4. Tutorial para instalar o python-tk [tutorial](http://www.tkdocs.com/tutorial/install.html#installwin)
 5. Instalar pacote Pillow `pip install Pillow`
@@ -103,13 +103,7 @@ Existem três maneiras de usar este script:
     uso: client.py [-h] [--port PORT] [--address IP] [--command CMD] [--directory DIR]
                   [--file DOF] [--no-keep-alive]
     
-
-    Split client binary book by chapters.
-
-    argumentos posicionais:
-      (filename or directory)               .* arquivo (s) a ser reproduzido.
-
-    argumentos opcionais:
+    argumentos:
       -h,      --help             mostre esta mensagem de ajuda e saia.
       -p PORT, --port       PORT  o número da porta PORT para escutar (padrão: 3030)
       -a IP,   --address    IP    número do endereço para ouvir (padrão: 127.0.0.1)

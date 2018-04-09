@@ -116,3 +116,4 @@ INFO:root:[CMD] GET LIST to ('127.0.0.1', 34456) Mon Apr  9 10:29:17 2018
 INFO:root:[CONNECT] ('127.0.0.1', 34458) Mon Apr  9 10:29:17 2018
 INFO:root:[MUSIC] 6 played ../arquivos/04 Stairway To Heaven.mp3 Mon Apr  9 10:29:17 2018
 INFO:root:[CMD] MUSIC ../arquivos/04 Stairway To Heaven.mp3 PLAY to ('127.0.0.1', 34458) Mon Apr  9 10:29:17 2018
+INFO:root:[MUSIC] 8 played ../arquivos/02 Rock And Roll.mp3 Mon Apr  9 10:29:17 2018

@@ -103,16 +103,10 @@ There are three ways to use this script:
     usage: client.py [-h] [--port PORT] [--address IP] [--command CMD] [--directory DIR]
                   [--file DOF] [--no-keep-alive]
     
-
-    Split client binary book by chapters.
-
-    positional arguments:
-    	(filename or directory)               .* file(s) to be played
-
-    optional arguments:
-      -h,      --help        	    show this help message and exit.
+    arguments:
+      -h,      --help             show this help message and exit.
       -p PORT, --port       PORT  port number to listen up (default: 3030)
-      -a IP,   --address    IP	  address number to listen up (default: 127.0.0.1)
+      -a IP,   --address    IP    address number to listen up (default: 127.0.0.1)
       -f DOF,  --file       DOF   directory to binary file(s) or binary file
       -c STR,  --command    CMD   customize chapter command (see README)
       -e EXT,  --extension  EXT   define files extension (default: /*.mp3)
