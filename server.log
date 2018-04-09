@@ -1,0 +1,18 @@
+INFO:root:[SERVER] Repository clean Mon Apr  9 11:53:42 2018
+INFO:root:[MUSIC] 0 played beep-01a.mp3 Mon Apr  9 11:53:42 2018
+INFO:root:[SERVER] Init Mon Apr  9 11:53:43 2018
+INFO:root:[SERVER] Repository clean Mon Apr  9 12:00:30 2018
+INFO:root:[MUSIC] 0 played beep-01a.mp3 Mon Apr  9 12:00:30 2018
+INFO:root:[SERVER] Repository clean Mon Apr  9 12:00:44 2018
+INFO:root:[MUSIC] 0 played beep-01a.mp3 Mon Apr  9 12:00:44 2018
+INFO:root:[SERVER] Init Mon Apr  9 12:00:45 2018
+INFO:root:[CONNECT] ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 05 Misty Mountain Hop.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 08 When The Levee Breaks.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 03 The Battle Of Evermore.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 06 Four Sticks.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 01 Black Dog.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 04 Stairway To Heaven.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 07 Going To California.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 02 Rock And Roll.mp3 Send to ('127.0.0.1', 35244) Mon Apr  9 12:00:45 2018
+INFO:root:[MUSIC] 1 played ../arquivos/05 Misty Mountain Hop.mp3 Mon Apr  9 12:00:45 2018

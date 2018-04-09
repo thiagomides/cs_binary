@@ -249,7 +249,7 @@ def server():
 
 def main(options):
  
-    logging.basicConfig(filename = 'example.log',level = logging.INFO)
+    logging.basicConfig(filename = 'server.log',level = logging.INFO)
     
     param.PORT = options.port
     param.DIR = options.dir
