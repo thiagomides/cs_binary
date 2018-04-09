@@ -16,9 +16,12 @@ def parseArg():
 
     
     (options, args) = parser.parse_args()
-
+    
     if options.port == None:
         options.port = 3030
+    else:
+        if options.port < 1024 or options.port > 65535:
+            exit("Socket: "+str(options.port)+ " not exists")
 
     if options.dir == None: 
         options.dir = "../arquivos/"

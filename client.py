@@ -20,17 +20,28 @@ def parseArg():
 
 	(options, args) = parser.parse_args()
 
+
+
 	if options.port == None:
 		options.port = 3030
+	else:
+		if options.port < 1024 or options.port > 65535:
+			exit("Socket: "+str(options.port)+ " not exists")
 	if options.file == None and options.command == None: 
-		raise RuntimeError("Parameter -f or -c problem")
+		exit("Missing parameter (-f or -c)")
 	if options.addr == None: 
 		options.addr = "127.0.0.1"
+	else:
+		try:
+			socket.inet_aton(options.addr)		
+		except socket.error:
+			exit("Invalid IP")
+
 	if options.file != None and not(exists(options.file)):
 		exit("Directory or File doenst exist")
 	if options.ext == None:
 		options.ext = "/*.mp3"
-	
+		
 	return (options, args)
 
 def path_leaf(path):
