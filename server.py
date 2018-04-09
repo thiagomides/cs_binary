@@ -13,6 +13,7 @@ def parseArg():
 
     parser.add_option("-p", "--port", dest="port", help="port number to listen up (default: 3030)", metavar="PORT",type="int");
     parser.add_option("-d", "--directory", dest="dir", help="binary(s) storage folder (default: ../arquivos/)",metavar="dir");
+
     
     (options, args) = parser.parse_args()
 
@@ -37,7 +38,7 @@ def clear_repository():
     param.PLAYED = []
     
     param.INI = time.time()
-    logging.info("[S] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
+    logging.info("[SERVER] Repository clean "+ str(time.asctime(time.localtime(time.time()))))
     
 
 def music_play(x):
@@ -51,7 +52,7 @@ def music_play(x):
         param.NOW = x
         param.PLAYED.append(x)
     
-        logging.info("[M] "+str(x)+ " played "+ str(param.SET_LIST[x]))
+        logging.info("[MUSIC] "+str(x)+ " played "+ str(param.SET_LIST[x]) + " " + str(time.asctime(time.localtime(param.INI))))
         print(x, param.SET_LIST[x])
 
         return True
@@ -143,29 +144,34 @@ def music_transfer(client_socket,addr):
         file.close()
 
         param.SET_LIST.append(param.DIR+name)
-        logging.info("[M] "+name+ " Send to "+ str(addr))
+        logging.info("[MUSIC] "+name+ " Send to "+ str(addr) + " " + str(time.asctime(time.localtime(param.INI))))
 
         
         client_socket.send(FTF)
 
     client_socket.close()
 
-def remote_control(client_socket):
+def remote_control(client_socket,addr):
     type = client_socket.recv(4)
-    
+    log = ""
     if type == "list":
         response(client_socket,get_playlist())
+        log = "GET LIST"
+
 
     elif (type == "stop"):
         pygame.mixer.music.pause()
         response(client_socket,"Stop Music")
+        log = "STOP MUSIC"
 
     elif (type == "play"):
         pygame.mixer.music.unpause()
         response(client_socket,"Play Music")
+        log = "PLAY MUSIC"
 
     elif(type == "noow"):
         response(client_socket,param.SET_LIST[param.NOW])
+        log = "MUSIC NOW"
 
     elif(type == "pmus"):
 
@@ -176,6 +182,7 @@ def remote_control(client_socket):
         if resp == False:
             client_socket.send("Música não existente")
         else:
+            log = "MUSIC "+param.SET_LIST[param.NOW]+" PLAY"
             client_socket.close()
     
     else:
@@ -185,14 +192,18 @@ def remote_control(client_socket):
 
         elif (type == "next"):
             music_play(random.randint(1,len(param.SET_LIST)  - 1 ))
-            msg = "Next Music"    
+            msg = "Next Music"  
+            log = "NEXT MUSIC"
+  
            
         elif (type == "rewi"):
             msg = "Repeat Music"
             music_play(param.NOW)
-
+            log = "REPEAT MUSIC"
         response(client_socket,msg)
-    
+
+    logging.info("[CMD] "+log+ " to "+ str(addr) + " " + str(time.asctime(time.localtime(param.INI))))
+
 
 
 def control(client_socket,addr):
@@ -202,7 +213,7 @@ def control(client_socket,addr):
         music_transfer(client_socket,addr)
 
     elif type == RCC:
-        remote_control(client_socket)
+        remote_control(client_socket,addr)
         
     
     
@@ -216,13 +227,13 @@ def server():
     s.listen(5)
     s.settimeout(1.0)
     param.INI = time.time()
-    logging.info("[S]ystem init "+ str(time.asctime(time.localtime(param.INI))))
+    logging.info("[SERVER] Init "+ str(time.asctime(time.localtime(param.INI))))
     while True:
         queue()
         try:
             (conn, addr) = s.accept()
             print 'Connection address:', addr
-            logging.info("[C] "+ str(addr) )
+            logging.info("[CONNECT] "+ str(addr) + " " + str(time.asctime(time.localtime(param.INI))))
             t = threading.Thread(target=control, args=(conn, addr),)   
             t.run()
         except socket.timeout:
